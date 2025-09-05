@@ -18,7 +18,7 @@ We developed a specialized fine-tuning dataset for small language models to enha
 * Training dataset: /datasets/generated_trajectory_data2.json
 * Test dataset： /datasets/test_questions2.csv
 
-You should refer to your own file path and modify the model's input path accordingly.
+First, you should refer to your own file path and modify the model's input path accordingly.
 ```
 model_name = "your_model_path";
 ...
@@ -27,7 +27,7 @@ df = pd.read_json('/your_path/generated_trajectory_data2.json')
 trainer.save_model('your_path')
 ```
 
-Then execute the fine-tuning program code.
+Then, execute the fine-tuning program code.
 ```
 python Fine_8B.py
 ```
@@ -49,13 +49,13 @@ test_df = pd.read_csv("your_path/test_questions2.csv")
 trainer.save_model('your_path')
 ```
 
-Then execute the test evaluation program code.
+Then, execute the test evaluation program code.
 ```
 python Fine_8B_acc.py
 ```
 
 
-# Chat with fined model
+# Chat with fined model with ROS2
 This file is responsible for invoking the fine-tuned model and converting model outputs into standard ROS2 Topic message format through the ROS2 mechanism.
 ```
 python chat_ros2.py
