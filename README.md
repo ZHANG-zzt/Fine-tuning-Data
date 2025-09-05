@@ -18,6 +18,14 @@ We developed a specialized fine-tuning dataset for small language models to enha
 * Training dataset: /datasets/generated_trajectory_data2.json
 * Test dataset： /datasets/test_questions2.csv
 
+```
+model_name = "Your path";
+...
+df = pd.read_json('/Your path/generated_trajectory_data2.json')
+...
+trainer.save_model('Your path')
+```
+
 
 You should refer to your own file path and modify the model's input path accordingly.
 ```
