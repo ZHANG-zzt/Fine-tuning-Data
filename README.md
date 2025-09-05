@@ -28,3 +28,4 @@ This file is responsible for invoking the fine-tuned model and converting model 
 python chat_ros2.py
 ```
 
+![Article] The research article supported by this data is coming soon.
