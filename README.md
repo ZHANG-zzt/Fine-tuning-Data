@@ -2,6 +2,11 @@
 
 We developed a specialized fine-tuning dataset for small language models to enhance high-level task configuration in underwater robotics. Through fine-tuning on this dataset, we significantly improved the parsing accuracy of small models for underwater robot task specifications. Experimental validation was conducted across four different small language models.
 
+
+<p align="left">
+<!--   <img src="image/images.jpeg" alt="Additional Image 1" width="100" height="100"/> -->
+</p>
+
 # Prerequisites and requirement 
 * GPU: At least 32GB VRAM
 * Install [ROS2 Humble](https://docs.ros.org/en/humble/)
