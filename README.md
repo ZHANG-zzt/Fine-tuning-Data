@@ -2,8 +2,23 @@
 
 We developed a specialized fine-tuning dataset for small language models to enhance high-level task configuration in underwater robotics. Through fine-tuning on this dataset, we significantly improved the parsing accuracy of small models for underwater robot task specifications. Experimental validation was conducted across four different small language models.
 
+# Requirement
+
+
 # Fine tuning Deepseek 8B model
+You should refer to your own file path and modify the model's input path accordingly.
 ```
 python Fine_8B.py
 ```
 
+# Evaluate the accuracy of the fine-tuned model
+Also, you should refer to your own file path and modify the model's input path accordingly.
+
+
+# chat with Fined model
+This file is responsible for invoking the fine-tuned model and converting model outputs into standard ROS2 Topic message format through the ROS2 mechanism.
+```
+python chat_ros2.py
+```
+
+# 
