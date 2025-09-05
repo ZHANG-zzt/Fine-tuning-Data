@@ -15,6 +15,10 @@ We developed a specialized fine-tuning dataset for small language models to enha
 
 
 # Fine tuning deepseek 8B model
+* Training dataset: /datasets/generated_trajectory_data2.json
+* Test dataset： /datasets/test_questions2.csv
+
+
 You should refer to your own file path and modify the model's input path accordingly.
 ```
 python Fine_8B.py
