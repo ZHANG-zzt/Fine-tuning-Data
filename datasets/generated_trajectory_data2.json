@@ -1,0 +1,799 @@
+[
+    {
+        "input": "Move to the blue float position with the speed set to 1m/s, where the blue float locate in [20, 10, 0].",
+        "output": "Target position is [20, 10, 0]. Speed = 1m/s."
+    },
+    {
+        "input": "Move to the red float position with the speed set to 1m/s, where the red float locate in [-20, 10, 0].",
+        "output": "Target position is [-20, 10, 0]. Speed = 1m/s."
+    },
+    {
+        "input": "Navigate to the red float at a speed of 0.5m/s, then move to the blue float position.",
+        "output": "Target position is [-20, 10, 0]. Speed = 0.5m/s. Next target is [20, 10, 0]."
+    },
+    {
+        "input": "Hey, can you go to the blue float? It's at [20, 10, 0] and I want you moving at 1m/s.",
+        "output": "Target position is [20, 10, 0]. Speed = 1m/s."
+    },
+    {
+        "input": "I need you to head over to the red float at [-20, 10, 0]. Keep the speed at 1m/s please.",
+        "output": "Target position is [-20, 10, 0]. Speed = 1m/s."
+    },
+    {
+        "input": "Go to the red float first at 0.5m/s, then swing by the blue float after that.",
+        "output": "Target position is [-20, 10, 0]. Speed = 0.5m/s. Next target is [20, 10, 0]."
+    },
+    {
+        "input": "Move to the green float position at [0, 15, 5] with a speed of 0.8m/s.",
+        "output": "Target position is [0, 15, 5]. Speed = 0.8m/s."
+    },
+    {
+        "input": "Could you navigate to the yellow float? It's located at [15, -5, 10] and use 1.2m/s speed.",
+        "output": "Target position is [15, -5, 10]. Speed = 1.2m/s."
+    },
+    {
+        "input": "I want you to go to the purple float at [-10, 20, -5]. Set your speed to 0.7m/s.",
+        "output": "Target position is [-10, 20, -5]. Speed = 0.7m/s."
+    },
+    {
+        "input": "Head to the orange float first at [25, 0, 15] going 0.9m/s, then move to the blue float.",
+        "output": "Target position is [25, 0, 15]. Speed = 0.9m/s. Next target is [20, 10, 0]."
+    },
+    {
+        "input": "Please move to the white float position which is at [0, 0, 20]. Use a speed of 1.5m/s.",
+        "output": "Target position is [0, 0, 20]. Speed = 1.5m/s."
+    },
+    {
+        "input": "Go to the black float at [-15, -10, 8] with 0.6m/s speed, then head to the red float.",
+        "output": "Target position is [-15, -10, 8]. Speed = 0.6m/s. Next target is [-20, 10, 0]."
+    },
+    {
+        "input": "I need you to navigate to the pink float located at [30, 5, -10]. Keep it at 1.1m/s.",
+        "output": "Target position is [30, 5, -10]. Speed = 1.1m/s."
+    },
+    {
+        "input": "Move to the cyan float at [5, 25, 12] using 0.4m/s speed.",
+        "output": "Target position is [5, 25, 12]. Speed = 0.4m/s."
+    },
+    {
+        "input": "Can you go to the brown float? It's at [-25, -5, 18] and I want 1.3m/s speed.",
+        "output": "Target position is [-25, -5, 18]. Speed = 1.3m/s."
+    },
+    {
+        "input": "Head over to the silver float at [12, -15, -8] at 0.8m/s, then go to the green float at [0, 15, 5].",
+        "output": "Target position is [12, -15, -8]. Speed = 0.8m/s. Next target is [0, 15, 5]."
+    },
+    {
+        "input": "I want you to move to the gold float position [18, 8, -12] with a speed of 1.4m/s.",
+        "output": "Target position is [18, 8, -12]. Speed = 1.4m/s."
+    },
+    {
+        "input": "Navigate to the violet float at [-8, 18, 6] going 0.9m/s please.",
+        "output": "Target position is [-8, 18, 6]. Speed = 0.9m/s."
+    },
+    {
+        "input": "Go to the lime float first at [22, -12, 14] using 0.7m/s, then move to the yellow float.",
+        "output": "Target position is [22, -12, 14]. Speed = 0.7m/s. Next target is [15, -5, 10]."
+    },
+    {
+        "input": "Please head to the navy float located at [-18, 12, -6]. Set speed to 1.6m/s.",
+        "output": "Target position is [-18, 12, -6]. Speed = 1.6m/s."
+    },
+    {
+        "input": "Move to the maroon float at [8, -20, 16] with 0.5m/s speed, then go to the purple float.",
+        "output": "Target position is [8, -20, 16]. Speed = 0.5m/s. Next target is [-10, 20, -5]."
+    },
+    {
+        "input": "I need you to go to the teal float at [35, 2, -15] using 1.2m/s speed.",
+        "output": "Target position is [35, 2, -15]. Speed = 1.2m/s."
+    },
+    {
+        "input": "Could you navigate to the coral float? It's at [-5, -25, 11] and use 0.3m/s speed.",
+        "output": "Target position is [-5, -25, 11]. Speed = 0.3m/s."
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.32 m/s and -0.45 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -3.61 meters.",
+        "output": "X[SPEED, 2.32], z[SPEED, -0.45], Y[amplitude, -3.61]"
+    },                                                                
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.35 m/s and -1.0 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -2.46 meters.",
+        
+        "output": "X[SPEED, 2.35], z[SPEED, -1.0], Y[amplitude, -2.46]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.37 m/s and -0.75 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -2.91 meters.",
+        
+        "output": "X[SPEED, 2.37], z[SPEED, -0.75], Y[amplitude, -2.91]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.89 m/s and -0.93 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -3.08 meters.",
+        
+        "output": "X[SPEED, 1.89], z[SPEED, -0.93], Y[amplitude, -3.08]"
+    },
+    {
+        "input": "Hey, can you set up a trajectory where X and Z move at 2.21 and -0.74 m/s? And make the Y axis do a sine wave thing with -3.09 meters amplitude over 16 seconds.",
+        "output": "X[SPEED, 2.21], z[SPEED, -0.74], Y[amplitude, -3.09]"
+    },
+    {
+        "input": "I need the trajectory to have X going at 1.51 m/s and Z at -0.83 m/s. For the Y axis, make it oscillate with an amplitude of -3.69 meters in a 19-second cycle.",
+        "output": "X[SPEED, 1.51], z[SPEED, -0.83], Y[amplitude, -3.69]"
+    },
+    {
+        "input": "Could you configure the path so X moves at 2.36 m/s and Z at -0.73 m/s? I want Y to follow a sine pattern with -3.83 meters amplitude over 20 seconds.",
+        "output": "X[SPEED, 2.36], z[SPEED, -0.73], Y[amplitude, -3.83]"
+    },
+    {
+        "input": "Please set X velocity to 2.44 m/s and Z to -0.78 m/s. Make the Y coordinate do a wavy motion with -3.21 meters amplitude in an 18-second period.",
+        "output": "X[SPEED, 2.44], z[SPEED, -0.78], Y[amplitude, -3.21]"
+    },
+    {
+        "input": "I want X moving at 1.77 m/s and Z at -0.93 m/s. Can you make Y oscillate with -3.84 meters amplitude over an 18-second cycle?",
+        "output": "X[SPEED, 1.77], z[SPEED, -0.93], Y[amplitude, -3.84]"
+    },
+    {
+        "input": "Set up the trajectory with X at 2.29 m/s and Z at -0.69 m/s. I need Y to do a sine wave motion with -3.45 meters amplitude in 18 seconds.",
+        "output": "X[SPEED, 2.29], z[SPEED, -0.69], Y[amplitude, -3.45]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.12 m/s and -0.83 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -2.23 meters.",
+        
+        "output": "X[SPEED, 2.12], z[SPEED, -0.83], Y[amplitude, -2.23]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.8 m/s and -0.96 m/s respectively, while the Y-coordinate follows a sine wave with a period of 17 seconds and an amplitude of -2.83 meters.",
+        
+        "output": "X[SPEED, 1.8], z[SPEED, -0.96], Y[amplitude, -2.83]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.65 m/s and -0.49 m/s respectively, while the Y-coordinate follows a sine wave with a period of 17 seconds and an amplitude of -2.32 meters.",
+        
+        "output": "X[SPEED, 1.65], z[SPEED, -0.49], Y[amplitude, -2.32]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.47 m/s and -0.55 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -3.69 meters.",
+        
+        "output": "X[SPEED, 2.47], z[SPEED, -0.55], Y[amplitude, -3.69]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.36 m/s and -0.67 m/s respectively, while the Y-coordinate follows a sine wave with a period of 17 seconds and an amplitude of -2.16 meters.",
+        
+        "output": "X[SPEED, 2.36], z[SPEED, -0.67], Y[amplitude, -2.16]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.2 m/s and -0.92 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -3.61 meters.",
+        
+        "output": "X[SPEED, 2.2], z[SPEED, -0.92], Y[amplitude, -3.61]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.74 m/s and -0.77 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -3.35 meters.",
+        
+        "output": "X[SPEED, 1.74], z[SPEED, -0.77], Y[amplitude, -3.35]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.95 m/s and -0.4 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -3.93 meters.",
+        
+        "output": "X[SPEED, 1.95], z[SPEED, -0.4], Y[amplitude, -3.93]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.75 m/s and -0.76 m/s respectively, while the Y-coordinate follows a sine wave with a period of 15 seconds and an amplitude of -2.55 meters.",
+        
+        "output": "X[SPEED, 1.75], z[SPEED, -0.76], Y[amplitude, -2.55]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.56 m/s and -0.45 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -2.08 meters.",
+        
+        "output": "X[SPEED, 1.56], z[SPEED, -0.45], Y[amplitude, -2.08]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.34 m/s and -0.75 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -2.39 meters.",
+        
+        "output": "X[SPEED, 2.34], z[SPEED, -0.75], Y[amplitude, -2.39]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.21 m/s and -0.53 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -3.08 meters.",
+        
+        "output": "X[SPEED, 2.21], z[SPEED, -0.53], Y[amplitude, -3.08]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.94 m/s and -0.94 m/s respectively, while the Y-coordinate follows a sine wave with a period of 15 seconds and an amplitude of -3.8 meters.",
+        
+        "output": "X[SPEED, 1.94], z[SPEED, -0.94], Y[amplitude, -3.8]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.32 m/s and -0.61 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -3.91 meters.",
+        
+        "output": "X[SPEED, 2.32], z[SPEED, -0.61], Y[amplitude, -3.91]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.23 m/s and -0.71 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -3.68 meters.",
+        
+        "output": "X[SPEED, 2.23], z[SPEED, -0.71], Y[amplitude, -3.68]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.48 m/s and -0.63 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -2.17 meters.",
+        
+        "output": "X[SPEED, 2.48], z[SPEED, -0.63], Y[amplitude, -2.17]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.21 m/s and -0.56 m/s respectively, while the Y-coordinate follows a sine wave with a period of 17 seconds and an amplitude of -3.52 meters.",
+        
+        "output": "X[SPEED, 2.21], z[SPEED, -0.56], Y[amplitude, -3.52]"
+    },
+    {
+        "input": "Hey, I need X moving at 2.15 m/s and Y at -0.68 m/s. Make Z do a wavy thing with -3.42 meters amplitude.",
+        "output": "X[SPEED, 2.15], Y[SPEED, -0.68], Z[amplitude, -3.42]"
+    },
+    {
+        "input": "Can you set up X to go 1.87 m/s and Y at -0.91 m/s? I want Z oscillating with -3.76 meters amplitude.",
+        "output": "X[SPEED, 1.87], Y[SPEED, -0.91], Z[amplitude, -3.76]"
+    },
+    {
+        "input": "I need the path with X at 2.41 m/s and Y moving -0.55 m/s. Make Z follow a sine pattern with -2.89 meters amplitude.",
+        "output": "X[SPEED, 2.41], Y[SPEED, -0.55], Z[amplitude, -2.89]"
+    },
+    {
+        "input": "Please configure X velocity to 1.73 m/s and Y to -0.82 m/s. Z should do a wave motion with -3.51 meters amplitude.",
+        "output": "X[SPEED, 1.73], Y[SPEED, -0.82], Z[amplitude, -3.51]"
+    },
+    {
+        "input": "Set X going at 2.56 m/s and Y at -0.47 m/s. I want Z to oscillate with -2.94 meters amplitude.",
+        "output": "X[SPEED, 2.56], Y[SPEED, -0.47], Z[amplitude, -2.94]"
+    },
+    {
+        "input": "Could you make X move 1.98 m/s and Y at -0.76 m/s? Z needs to do a sine wave thing with -3.28 meters amplitude.",
+        "output": "X[SPEED, 1.98], Y[SPEED, -0.76], Z[amplitude, -3.28]"
+    },
+    {
+        "input": "I want X at 2.34 m/s and Y moving -0.59 m/s. Make Z follow a wavy pattern with -3.85 meters amplitude.",
+        "output": "X[SPEED, 2.34], Y[SPEED, -0.59], Z[amplitude, -3.85]"
+    },
+    {
+        "input": "Set up the trajectory with X going 1.65 m/s and Y at -0.88 m/s. Z should oscillate with -2.73 meters amplitude.",
+        "output": "X[SPEED, 1.65], Y[SPEED, -0.88], Z[amplitude, -2.73]"
+    },
+    {
+        "input": "Can you configure X to 2.67 m/s and Y to -0.42 m/s? I need Z doing a sine motion with -3.19 meters amplitude.",
+        "output": "X[SPEED, 2.67], Y[SPEED, -0.42], Z[amplitude, -3.19]"
+    },
+    {
+        "input": "Please set X velocity at 1.82 m/s and Y at -0.95 m/s. Make Z follow a wave with -3.67 meters amplitude.",
+        "output": "X[SPEED, 1.82], Y[SPEED, -0.95], Z[amplitude, -3.67]"
+    },
+    {
+        "input": "I want X moving 2.19 m/s and Y going -0.64 m/s. Z should do a wavy thing with -2.56 meters amplitude.",
+        "output": "X[SPEED, 2.19], Y[SPEED, -0.64], Z[amplitude, -2.56]"
+    },
+    {
+        "input": "Set the path with X at 1.76 m/s and Y at -0.73 m/s. Make Z oscillate with -3.93 meters amplitude.",
+        "output": "X[SPEED, 1.76], Y[SPEED, -0.73], Z[amplitude, -3.93]"
+    },
+    {
+        "input": "Could you make X go 2.45 m/s and Y move -0.51 m/s? I need Z following a sine pattern with -3.12 meters amplitude.",
+        "output": "X[SPEED, 2.45], Y[SPEED, -0.51], Z[amplitude, -3.12]"
+    },
+    {
+        "input": "I want the trajectory with X at 1.59 m/s and Y at -0.87 m/s. Z should do a wave motion with -2.84 meters amplitude.",
+        "output": "X[SPEED, 1.59], Y[SPEED, -0.87], Z[amplitude, -2.84]"
+    },
+    {
+        "input": "Please configure X to 2.78 m/s and Y to -0.38 m/s. Make Z oscillate with -3.47 meters amplitude.",
+        "output": "X[SPEED, 2.78], Y[SPEED, -0.38], Z[amplitude, -3.47]"
+    },
+    {
+        "input": "Set X moving at 1.91 m/s and Y going -0.79 m/s. I want Z doing a sine wave with -3.26 meters amplitude.",
+        "output": "X[SPEED, 1.91], Y[SPEED, -0.79], Z[amplitude, -3.26]"
+    },
+    {
+        "input": "Can you make X go 2.28 m/s and Y at -0.66 m/s? Z needs to follow a wavy pattern with -2.91 meters amplitude.",
+        "output": "X[SPEED, 2.28], Y[SPEED, -0.66], Z[amplitude, -2.91]"
+    },
+    {
+        "input": "I need X at 1.84 m/s and Y moving -0.92 m/s. Make Z do a wave thing with -3.74 meters amplitude.",
+        "output": "X[SPEED, 1.84], Y[SPEED, -0.92], Z[amplitude, -3.74]"
+    },
+    {
+        "input": "Set up X velocity to 2.52 m/s and Y to -0.45 m/s. Z should oscillate with -3.08 meters amplitude.",
+        "output": "X[SPEED, 2.52], Y[SPEED, -0.45], Z[amplitude, -3.08]"
+    },
+    {
+        "input": "Could you configure X going 1.67 m/s and Y at -0.85 m/s? I want Z following a sine motion with -2.67 meters amplitude.",
+        "output": "X[SPEED, 1.67], Y[SPEED, -0.85], Z[amplitude, -2.67]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.3 m/s and -0.52 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -3.06 meters.",
+        
+        "output": "X[SPEED, 2.3], z[SPEED, -0.52], Y[amplitude, -3.06]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.17 m/s and -0.74 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -3.17 meters.",
+        
+        "output": "X[SPEED, 2.17], z[SPEED, -0.74], Y[amplitude, -3.17]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.13 m/s and -0.49 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -3.78 meters.",
+        
+        "output": "X[SPEED, 2.13], z[SPEED, -0.49], Y[amplitude, -3.78]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.1 m/s and -0.54 m/s respectively, while the Y-coordinate follows a sine wave with a period of 17 seconds and an amplitude of -3.95 meters.",
+        
+        "output": "X[SPEED, 2.1], z[SPEED, -0.54], Y[amplitude, -3.95]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.74 m/s and -0.8 m/s respectively, while the Y-coordinate follows a sine wave with a period of 15 seconds and an amplitude of -3.33 meters.",
+        
+        "output": "X[SPEED, 1.74], z[SPEED, -0.8], Y[amplitude, -3.33]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.13 m/s and -0.46 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -3.89 meters.",
+        
+        "output": "X[SPEED, 2.13], z[SPEED, -0.46], Y[amplitude, -3.89]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.44 m/s and -0.96 m/s respectively, while the Y-coordinate follows a sine wave with a period of 15 seconds and an amplitude of -2.09 meters.",
+        
+        "output": "X[SPEED, 2.44], z[SPEED, -0.96], Y[amplitude, -2.09]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.71 m/s and -0.49 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -2.28 meters.",
+        
+        "output": "X[SPEED, 1.71], z[SPEED, -0.49], Y[amplitude, -2.28]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.52 m/s and -0.52 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -2.34 meters.",
+        
+        "output": "X[SPEED, 1.52], z[SPEED, -0.52], Y[amplitude, -2.34]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.75 m/s and -1.0 m/s respectively, while the Y-coordinate follows a sine wave with a period of 15 seconds and an amplitude of -3.66 meters.",
+        
+        "output": "X[SPEED, 1.75], z[SPEED, -1.0], Y[amplitude, -3.66]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.54 m/s and -0.48 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -3.08 meters.",
+        
+        "output": "X[SPEED, 1.54], z[SPEED, -0.48], Y[amplitude, -3.08]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.19 m/s and -0.66 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -3.47 meters.",
+        
+        "output": "X[SPEED, 2.19], z[SPEED, -0.66], Y[amplitude, -3.47]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.47 m/s and -0.54 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -2.01 meters.",
+        
+        "output": "X[SPEED, 2.47], z[SPEED, -0.54], Y[amplitude, -2.01]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.85 m/s and -0.51 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -3.32 meters.",
+        
+        "output": "X[SPEED, 1.85], z[SPEED, -0.51], Y[amplitude, -3.32]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.99 m/s and -0.53 m/s respectively, while the Y-coordinate follows a sine wave with a period of 18 seconds and an amplitude of -2.35 meters.",
+        
+        "output": "X[SPEED, 1.99], z[SPEED, -0.53], Y[amplitude, -2.35]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.01 m/s and -0.93 m/s respectively, while the Y-coordinate follows a sine wave with a period of 17 seconds and an amplitude of -2.71 meters.",
+        
+        "output": "X[SPEED, 2.01], z[SPEED, -0.93], Y[amplitude, -2.71]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.29 m/s and -0.84 m/s respectively, while the Y-coordinate follows a sine wave with a period of 15 seconds and an amplitude of -3.42 meters.",
+        
+        "output": "X[SPEED, 2.29], z[SPEED, -0.84], Y[amplitude, -3.42]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.92 m/s and -0.52 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -2.97 meters.",
+        
+        "output": "X[SPEED, 1.92], z[SPEED, -0.52], Y[amplitude, -2.97]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.04 m/s and -0.56 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -2.08 meters.",
+        
+        "output": "X[SPEED, 2.04], z[SPEED, -0.56], Y[amplitude, -2.08]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.07 m/s and -0.94 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -2.2 meters.",
+        
+        "output": "X[SPEED, 2.07], z[SPEED, -0.94], Y[amplitude, -2.2]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.23 m/s and -0.73 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -3.94 meters.",
+        
+        "output": "X[SPEED, 2.23], z[SPEED, -0.73], Y[amplitude, -3.94]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.92 m/s and -0.58 m/s respectively, while the Y-coordinate follows a sine wave with a period of 16 seconds and an amplitude of -2.35 meters.",
+        
+        "output": "X[SPEED, 1.92], z[SPEED, -0.58], Y[amplitude, -2.35]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.33 m/s and -0.82 m/s respectively, while the Y-coordinate follows a sine wave with a period of 19 seconds and an amplitude of -2.4 meters.",
+        
+        "output": "X[SPEED, 2.33], z[SPEED, -0.82], Y[amplitude, -2.4]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.05 m/s and -0.59 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -3.85 meters.",
+        
+        "output": "X[SPEED, 2.05], z[SPEED, -0.59], Y[amplitude, -3.85]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.1 m/s and -0.62 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -2.26 meters.",
+        
+        "output": "X[SPEED, 2.1], z[SPEED, -0.62], Y[amplitude, -2.26]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.8 m/s and -0.96 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -3.7 meters.",
+        
+        "output": "X[SPEED, 1.8], z[SPEED, -0.96], Y[amplitude, -3.7]"
+    },
+    {
+        "input": "Emergency return to home immediately!",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Low battery, initiate return to home procedure",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Signal lost, activate emergency return to launch point",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Weather deteriorating, return to base at maximum safe speed",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "System malfunction detected, emergency landing at home position",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Abort mission and return home now!",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Critical error, immediate return to launch with failsafe mode",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "GPS failure, return to home using backup navigation",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Engine overheating, emergency return to base",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Communication lost for 30 seconds, auto-return home",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Obstacle collision detected, return to safe home position",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Battery at 15%, initiate emergency return procedure",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Strong wind warning, return to launch point immediately",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Sensor failure, activate return to home with manual override",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Geofence breach, emergency return to authorized area",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Motor vibration detected, safe return to launch point",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Temperature critical, emergency return with reduced power",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Radio interference detected, switch to emergency return mode",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Flight time exceeded, mandatory return to launch",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Maintain depth at 3 meters while moving forward",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Keep current depth and proceed to waypoint",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Hold depth at 3 meters and rotate 180 degrees",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Maintain 3 meter depth while scanning area",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Keep depth constant at 3 meters during patrol",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Hold current depth and move laterally 50 meters",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Maintain 3 meter depth while following target",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Keep depth at 3 meters and circle the area",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Hold depth constant during data collection phase",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Stay at 3 meters depth while collecting samples",
+        "output": "desire Z = -3"
+    },
+    {
+        "input": "Multiple system failures, activate full emergency return protocol",
+        "output": "Return to [x,y,z] = [0,0,0]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.01 m/s and -0.76 m/s respectively.",
+        "output": "X[SPEED, 2.01], z[SPEED, -0.76]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.41 m/s and -0.5 m/s respectively.",
+        "output": "X[SPEED, 2.41], z[SPEED, -0.5]"
+    },
+    {
+        "input": "Configure the path with X velocity at 1.85 m/s and Z velocity at -0.92 m/s.",
+        "output": "X[SPEED, 1.85], z[SPEED, -0.92]"
+    },
+    {
+        "input": "I need X moving at 2.67 m/s and Z going -0.38 m/s for the trajectory.",
+        "output": "X[SPEED, 2.67], z[SPEED, -0.38]"
+    },
+    {
+        "input": "Please set up the motion with X speed 1.73 m/s and Z speed -0.84 m/s.",
+        "output": "X[SPEED, 1.73], z[SPEED, -0.84]"
+    },
+    {
+        "input": "Can you establish a trajectory where X axis moves at 2.29 m/s and Z axis at -0.62 m/s?",
+        "output": "X[SPEED, 2.29], z[SPEED, -0.62]"
+    },
+    {
+        "input": "Define the path with X-axis velocity of 1.96 m/s and Z-axis velocity of -0.78 m/s.",
+        "output": "X[SPEED, 1.96], z[SPEED, -0.78]"
+    },
+    {
+        "input": "I want the trajectory configured with speeds: X at 2.54 m/s, Z at -0.45 m/s.",
+        "output": "X[SPEED, 2.54], z[SPEED, -0.45]"
+    },
+    {
+        "input": "Set up motion parameters with X velocity 1.62 m/s and Z velocity -0.89 m/s.",
+        "output": "X[SPEED, 1.62], z[SPEED, -0.89]"
+    },
+    {
+        "input": "Configure the movement with X going 2.38 m/s and Z moving at -0.57 m/s.",
+        "output": "X[SPEED, 2.38], z[SPEED, -0.57]"
+    },
+    {
+        "input": "Establish trajectory parameters: X speed = 1.79 m/s, Z speed = -0.71 m/s.",
+        "output": "X[SPEED, 1.79], z[SPEED, -0.71]"
+    },
+    {
+        "input": "Hey, can you set X to move at 2.15 m/s and Z at -0.83 m/s?",
+        "output": "X[SPEED, 2.15], z[SPEED, -0.83]"
+    },
+    {
+        "input": "I need to configure the path with X velocity 1.94 m/s and Z velocity -0.46 m/s.",
+        "output": "X[SPEED, 1.94], z[SPEED, -0.46]"
+    },
+    {
+        "input": "Please define motion along X at 2.72 m/s and along Z at -0.64 m/s.",
+        "output": "X[SPEED, 2.72], z[SPEED, -0.64]"
+    },
+    {
+        "input": "Could you set the trajectory where X moves 1.58 m/s and Z moves -0.95 m/s?",
+        "output": "X[SPEED, 1.58], z[SPEED, -0.95]"
+    },
+    {
+        "input": "Configure the vehicle to move with X speed of 2.43 m/s and Z speed of -0.52 m/s.",
+        "output": "X[SPEED, 2.43], z[SPEED, -0.52]"
+    },
+    {
+        "input": "I want to establish a path with X-direction speed 1.87 m/s and Z-direction speed -0.69 m/s.",
+        "output": "X[SPEED, 1.87], z[SPEED, -0.69]"
+    },
+    {
+        "input": "Set motion control with X axis at 2.06 m/s and Z axis at -0.81 m/s.",
+        "output": "X[SPEED, 2.06], z[SPEED, -0.81]"
+    },
+    {
+        "input": "Define the trajectory using X velocity 1.71 m/s and Z velocity -0.74 m/s.",
+        "output": "X[SPEED, 1.71], z[SPEED, -0.74]"
+    },
+    {
+        "input": "Can you configure the movement pattern with X at 2.59 m/s and Z at -0.41 m/s?",
+        "output": "X[SPEED, 2.59], z[SPEED, -0.41]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 1.77 m/s and -0.9 m/s respectively, while the Y-coordinate follows a sine wave with a period of 20 seconds and an amplitude of -3.2 meters.",
+        
+        "output": "X[SPEED, 1.77], z[SPEED, -0.9], Y[amplitude, -3.2]"
+    },
+    {
+        "input": "Set the trajectory with the speeds along the X and Z axes set to 2.2 m/s and -0.44 m/s respectively, while the Y-coordinate follows a sine wave with a period of 15 seconds and an amplitude of -3.3 meters.",
+        
+        "output": "X[SPEED, 2.2], z[SPEED, -0.44], Y[amplitude, -3.3]"
+    },
+    {
+        "input": "Hold current position for 30 seconds",
+        "output": "HOLD[TIME, 30]"
+    },
+    {
+        "input": "Maintain this position for 45 seconds",
+        "output": "HOLD[TIME, 45]"
+    },
+    {
+        "input": "Stay here for 1 minute",
+        "output": "HOLD[TIME, 60]"
+    },
+    {
+        "input": "Keep position steady for 90 seconds",
+        "output": "HOLD[TIME, 90]"
+    },
+    {
+        "input": "Hold station for 2 minutes",
+        "output": "HOLD[TIME, 120]"
+    },
+    {
+        "input": "Remain stationary for 15 seconds",
+        "output": "HOLD[TIME, 15]"
+    },
+    {
+        "input": "Please hold current location for 3 minutes",
+        "output": "HOLD[TIME, 180]"
+    },
+    {
+        "input": "Station keep for 75 seconds",
+        "output": "HOLD[TIME, 75]"
+    },
+    {
+        "input": "Hover in place for 50 seconds",
+        "output": "HOLD[TIME, 50]"
+    },
+    {
+        "input": "Maintain current coordinates for 25 seconds",
+        "output": "HOLD[TIME, 25]"
+    },
+    {
+        "input": "Hey, can you change the control weight matrix to diag(0.5, 0.5, 0.5, 0.5, 0.5, 0.5)?",
+        "output": "[0.5, 0.5, 0.5, 0.5, 0.5, 0.5]"
+    },
+    {
+        "input": "I need to adjust the weight matrix, make it diag(0.75, 0.75, 0.75, 0.75, 0.75, 0.75).",
+        "output": "[0.75, 0.75, 0.75, 0.75, 0.75, 0.75]"
+    },
+    {
+        "input": "Could you update the control input weights to diag(0.65, 0.65, 0.65, 0.65, 0.65, 0.65)?",
+        "output": "[0.65, 0.65, 0.65, 0.65, 0.65, 0.65]"
+    },
+    {
+        "input": "Please set the weight matrix as diag(0.85, 0.85, 0.85, 0.85, 0.85, 0.85).",
+        "output": "[0.85, 0.85, 0.85, 0.85, 0.85, 0.85]"
+    },
+    {
+        "input": "I want to modify the control weights, use diag(0.55, 0.55, 0.55, 0.55, 0.55, 0.55).",
+        "output": "[0.55, 0.55, 0.55, 0.55, 0.55, 0.55]"
+    },
+    {
+        "input": "Can you configure the weight matrix to diag(0.95, 0.95, 0.95, 0.95, 0.95, 0.95)?",
+        "output": "[0.95, 0.95, 0.95, 0.95, 0.95, 0.95]"
+    },
+    {
+        "input": "Set up the control input weight as diag(0.45, 0.45, 0.45, 0.45, 0.45, 0.45).",
+        "output": "[0.45, 0.45, 0.45, 0.45, 0.45, 0.45]"
+    },
+    {
+        "input": "I need the weight matrix changed to diag(0.72, 0.72, 0.72, 0.72, 0.72, 0.72).",
+        "output": "[0.72, 0.72, 0.72, 0.72, 0.72, 0.72]"
+    },
+    {
+        "input": "Could you adjust the control weights to diag(0.88, 0.88, 0.88, 0.88, 0.88, 0.88)?",
+        "output": "[0.88, 0.88, 0.88, 0.88, 0.88, 0.88]"
+    },
+    {
+        "input": "Please update the weight matrix, make it diag(0.62, 0.62, 0.62, 0.62, 0.62, 0.62).",
+        "output": "[0.62, 0.62, 0.62, 0.62, 0.62, 0.62]"
+    },
+    {
+        "input": "I want to set the control input weights as diag(0.78, 0.78, 0.78, 0.78, 0.78, 0.78).",
+        "output": "[0.78, 0.78, 0.78, 0.78, 0.78, 0.78]"
+    },
+    {
+        "input": "Can you modify the weight matrix to diag(0.52, 0.52, 0.52, 0.52, 0.52, 0.52)?",
+        "output": "[0.52, 0.52, 0.52, 0.52, 0.52, 0.52]"
+    },
+    {
+        "input": "Set the control weights to diag(0.92, 0.92, 0.92, 0.92, 0.92, 0.92) please.",
+        "output": "[0.92, 0.92, 0.92, 0.92, 0.92, 0.92]"
+    },
+    {
+        "input": "I need to change the weight matrix, use diag(0.68, 0.68, 0.68, 0.68, 0.68, 0.68).",
+        "output": "[0.68, 0.68, 0.68, 0.68, 0.68, 0.68]"
+    },
+    {
+        "input": "Could you configure the control input weight as diag(0.82, 0.82, 0.82, 0.82, 0.82, 0.82)?",
+        "output": "[0.82, 0.82, 0.82, 0.82, 0.82, 0.82]"
+    },
+    {
+        "input": "Please adjust the weight matrix to diag(0.58, 0.58, 0.58, 0.58, 0.58, 0.58).",
+        "output": "[0.58, 0.58, 0.58, 0.58, 0.58, 0.58]"
+    },
+    {
+        "input": "I want the control weights set as diag(0.76, 0.76, 0.76, 0.76, 0.76, 0.76).",
+        "output": "[0.76, 0.76, 0.76, 0.76, 0.76, 0.76]"
+    },
+    {
+        "input": "Can you update the weight matrix to diag(0.48, 0.48, 0.48, 0.48, 0.48, 0.48)?",
+        "output": "[0.48, 0.48, 0.48, 0.48, 0.48, 0.48]"
+    },
+    {
+        "input": "Set up the control input weight matrix as diag(0.86, 0.86, 0.86, 0.86, 0.86, 0.86).",
+        "output": "[0.86, 0.86, 0.86, 0.86, 0.86, 0.86]"
+    },
+    {
+        "input": "I need to modify the weights, make them diag(0.64, 0.64, 0.64, 0.64, 0.64, 0.64).",
+        "output": "[0.64, 0.64, 0.64, 0.64, 0.64, 0.64]"
+    },
+
+    {
+        "input": "Increase the weight, set the control input weight matrix to diag(0.1, 0.1, 0.1, 0.1, 0.1, 0.1)",
+        "output": "[0.1, 0.1, 0.1, 0.1, 0.1, 0.1]"
+    },
+    {
+        "input": "Adjust the control input matrix, set it to diag(0.3, 0.3, 0.3, 0.3, 0.3, 0.3)",
+        "output": "[0.3, 0.3, 0.3, 0.3, 0.3, 0.3]"
+    },
+    {
+        "input": "Set the weight matrix to diag(0.4, 0.4, 0.4, 0.4, 0.4, 0.4) for the control input",
+        "output": "[0.4, 0.4, 0.4, 0.4, 0.4, 0.4]"
+    },
+    {
+        "input": "Adjust the weight matrix for control input to diag(0.5, 0.5, 0.5, 0.5, 0.5, 0.5)",
+        "output": "[0.5, 0.5, 0.5, 0.5, 0.5, 0.5]"
+    },
+    {
+        "input": "Modify the control input weight matrix to diag(0.6, 0.6, 0.6, 0.6, 0.6, 0.6)",
+        "output": "[0.6, 0.6, 0.6, 0.6, 0.6, 0.6]"
+    },
+    {
+        "input": "Update the weight matrix to diag(0.7, 0.7, 0.7, 0.7, 0.7, 0.7)",
+        "output": "[0.7, 0.7, 0.7, 0.7, 0.7, 0.7]"
+    },
+    {
+        "input": "Set the control input weight matrix to diag(0.8, 0.8, 0.8, 0.8, 0.8, 0.8)",
+        "output": "[0.8, 0.8, 0.8, 0.8, 0.8, 0.8]"
+    },
+    {
+        "input": "Increase the control input weight matrix to diag(0.9, 0.9, 0.9, 0.9, 0.9, 0.9)",
+        "output": "[0.9, 0.9, 0.9, 0.9, 0.9, 0.9]"
+    },
+    {
+        "input": "Modify the weight for control input, set it to diag(1.0, 1.0, 1.0, 1.0, 1.0, 1.0)",
+        "output": "[1.0, 1.0, 1.0, 1.0, 1.0, 1.0]"
+    }
+]
