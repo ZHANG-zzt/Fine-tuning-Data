@@ -60,7 +60,8 @@ This file is responsible for invoking the fine-tuned model and converting model 
 ```
 python chat_ros2.py
 ```
+Then, the chat interface appears as follows:
 <p align="left">
-<img src="/figure/chat_interface.png" alt="Additional Image 2" width="300" height="300"/>
+<img src="/figure/chat_interface.png" alt="Additional Image 2" width="500" height="500"/>
 </p>
 ![Publication](https://img.shields.io/badge/Publication-Coming%20Soon-blue)
