@@ -22,7 +22,7 @@ python Fine_8B_acc.py
 ```
 
 
-# chat with fined model
+# Chat with fined model
 This file is responsible for invoking the fine-tuned model and converting model outputs into standard ROS2 Topic message format through the ROS2 mechanism.
 ```
 python chat_ros2.py
