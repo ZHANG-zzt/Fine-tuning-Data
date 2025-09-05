@@ -4,7 +4,7 @@ We developed a specialized fine-tuning dataset for small language models to enha
 
 
 <p align="left">
-<img src="ocean.png" alt="Additional Image 1" width="100" height="100"/>
+<img src="ocean.png" alt="Additional Image 1" width="200" height="200"/>
 </p>
 
 # Prerequisites and requirement 
