@@ -2,7 +2,11 @@
 
 We developed a specialized fine-tuning dataset for small language models to enhance high-level task configuration in underwater robotics. Through fine-tuning on this dataset, we significantly improved the parsing accuracy of small models for underwater robot task specifications. Experimental validation was conducted across four different small language models.
 
-# Requirement
+# Prerequisites and requirement 
+* GPU: At least 32GB VRAM
+* Install [ROS2 Humble](https://docs.ros.org/en/humble/)
+* Ubuntu 20.04/22.04
+* Python 3.9+
 
 
 # Fine tuning Deepseek 8B model
