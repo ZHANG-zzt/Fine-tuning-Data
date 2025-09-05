@@ -19,11 +19,11 @@ We developed a specialized fine-tuning dataset for small language models to enha
 * Test dataset： /datasets/test_questions2.csv
 
 ```
-model_name = "Your model path";
+model_name = "Your_model_path";
 ...
-df = pd.read_json('/Your path/generated_trajectory_data2.json')
+df = pd.read_json('/Your_path/generated_trajectory_data2.json')
 ...
-trainer.save_model('Your path')
+trainer.save_model('Your_path')
 ```
 
 
@@ -35,17 +35,17 @@ python Fine_8B.py
 # Evaluate the accuracy
 
 ```
-model_name = "Your model path";
+model_name = "your_model_path";
 ...
 model = AutoModelForCausalLM.from_pretrained(
-    "Your path/Llama_8b_LoRA",
+    "your_path/Llama_8b_LoRA",
     device_map="auto",
     trust_remote_code=True
 )
 ...
-test_df = pd.read_csv("test_questions2.csv")
+test_df = pd.read_csv("your_path/test_questions2.csv")
 ...
-trainer.save_model('Your path')
+trainer.save_model('your_path')
 ```
 
 Also, you should refer to your own file path and modify the model's input path accordingly.
