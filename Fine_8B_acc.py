@@ -49,7 +49,7 @@ def answer_template(prompt):
     return f"User: {prompt}\n\nAssistant:"
 
 
-test_df = pd.read_csv("test_questions.csv")
+test_df = pd.read_csv("test_questions2.csv")
 
 correct = 0
 total_completion_tokens = 0
@@ -90,3 +90,4 @@ print(f"{accuracy:.2f}%")
 
 avg_completion_tokens = total_completion_tokens / len(test_df)
 print(f"{avg_completion_tokens:.2f}")
+
