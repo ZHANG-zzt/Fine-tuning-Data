@@ -4,7 +4,7 @@ We developed a specialized fine-tuning dataset for small language models to enha
 
 
 <p align="left">
-<img src="ocean.png" alt="Additional Image 1" width="300" height="300"/>
+<img src="/figure/ocean.png" alt="Additional Image 1" width="300" height="300"/>
 </p>
 
 # Prerequisites and requirement 
@@ -60,5 +60,7 @@ This file is responsible for invoking the fine-tuned model and converting model 
 ```
 python chat_ros2.py
 ```
-
+<p align="left">
+<img src="/figure/chat_interface.png" alt="Additional Image 2" width="300" height="300"/>
+</p>
 ![Publication](https://img.shields.io/badge/Publication-Coming%20Soon-blue)
