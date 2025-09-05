@@ -18,22 +18,23 @@ We developed a specialized fine-tuning dataset for small language models to enha
 * Training dataset: /datasets/generated_trajectory_data2.json
 * Test dataset： /datasets/test_questions2.csv
 
-```
-model_name = "Your_model_path";
-...
-df = pd.read_json('/Your_path/generated_trajectory_data2.json')
-...
-trainer.save_model('Your_path')
-```
-
-
 You should refer to your own file path and modify the model's input path accordingly.
+```
+model_name = "your_model_path";
+...
+df = pd.read_json('/your_path/generated_trajectory_data2.json')
+...
+trainer.save_model('your_path')
+```
+
+Then execute the fine-tuning program code.
 ```
 python Fine_8B.py
 ```
 
 # Evaluate the accuracy
 
+Additionally, you should refer to your own file paths and modify the input paths for the models in the evaluation file accordingly.
 ```
 model_name = "your_model_path";
 ...
@@ -48,7 +49,7 @@ test_df = pd.read_csv("your_path/test_questions2.csv")
 trainer.save_model('your_path')
 ```
 
-Also, you should refer to your own file path and modify the model's input path accordingly.
+Then execute the test evaluation program code.
 ```
 python Fine_8B_acc.py
 ```
