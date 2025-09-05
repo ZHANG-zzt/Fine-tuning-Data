@@ -20,7 +20,7 @@ We developed a specialized fine-tuning dataset for small language models to enha
 
 First, you should refer to your own file path and modify the model's input path accordingly.
 ```
-model_name = "your_model_path";
+model_name = "your_model_path"
 ...
 df = pd.read_json('/your_path/generated_trajectory_data2.json')
 ...
@@ -36,7 +36,7 @@ python Fine_8B.py
 
 Additionally, you should refer to your own file paths and modify the input paths for the models in the evaluation file accordingly.
 ```
-model_name = "your_model_path";
+model_name = "your_model_path"
 ...
 model = AutoModelForCausalLM.from_pretrained(
     "your_path/Llama_8b_LoRA",
