@@ -377,7 +377,6 @@ class TrajectoryAssistant(Node):
           print(f"Model type: {type(self.model).__name__}")
   
   def show_model_info(self):
-      """显示模型详细信息"""
       if self.model is None:
           print("Model not loaded yet")
           return
@@ -501,4 +500,5 @@ def main():
 
 
 if __name__ == "__main__":
+
   main()
